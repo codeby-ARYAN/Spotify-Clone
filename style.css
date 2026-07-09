@@ -13,3 +13,25 @@ body{
     overflow: hidden;
     
 }
+.main{
+    display: flex;
+    height: 100vh;
+}
+.sidebar{
+    width: 350px;
+    border-radius: 1rem;
+    background-color: #121212;
+}
+.content{
+    border-radius: 1rem;
+    background-color: #121212;
+    flex: 1;
+    overflow: auto; /* scroll bar when required*/
+}
+.player{
+    position: fixed;
+    background-color: black;
+    bottom: 0;
+    height: 72px;
+    width: 100%;
+}
