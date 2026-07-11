@@ -10,9 +10,8 @@ body{
     margin: 0;
     background-color: #000;
     color: #fff;
-    overflow: hidden;
-    
-}
+    overflow: hidden;   
+} /* 1rem = 16px */
 .main{
     display: flex;
     height: 100vh;
@@ -20,7 +19,7 @@ body{
 .sidebar{
     width: 350px;
     border-radius: 1rem;
-    background-color: #121212;
+    background-color: #000;
 }
 .content{
     border-radius: 1rem;
@@ -34,4 +33,77 @@ body{
     bottom: 0;
     height: 72px;
     width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.5;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+.nav-option:hover{
+    opacity: 1;
+    /* font-weight: 600; */
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+.library{
+    background-color: #121212;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    height: 100%;
+}
+.lib-option img{
+    height: 1.1rem;
+    width: 1.25rem;
+}
+.lib-option a{
+    font-size: 1rem;
+    padding-left: 0.75rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+}
+.icons i{
+    font-size: 1.1rem;
+    opacity: 0.5;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.lib-boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.box{
+    background-color: #1F1F1F;
+
+}
+.p1, .p2{
+    margin: 1rem;
 }
