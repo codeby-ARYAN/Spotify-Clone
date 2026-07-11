@@ -17,7 +17,7 @@ body{
     height: 100vh;
 }
 .sidebar{
-    width: 350px;
+    width: 340px;
     border-radius: 1rem;
     background-color: #000;
 }
@@ -57,14 +57,12 @@ a{
 }
 .nav-option:hover{
     opacity: 1;
-    /* font-weight: 600; */
 }
 .nav-option i{
     font-size: 1.25rem;
 }
 .nav-option a{
     font-size: 1rem;
-    padding-left: 1rem;
 }
 .library{
     background-color: #121212;
@@ -102,8 +100,32 @@ a{
 }
 .box{
     background-color: #1F1F1F;
+    margin: 0.9rem 0.5rem;
+    padding: 1rem 1.25rem;
+    border-radius: 0.75rem;
+
+
+}
+.p1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.p2{
+    font-size: 0.85rem;
+    font-weight: 500;
+    opacity: 0.7;
 
 }
 .p1, .p2{
-    margin: 1rem;
+    /* margin: 1.5rem; */
+    line-height: 1.75rem;
+}
+.badge button{
+    font-size: 0.85rem;
+    border-radius: 1.75rem;
+    padding: 0.5rem 1.25rem;
+    margin-top: 1rem;
+    font-weight: 550;
+    border: none;
+    width: fit-content;
 }
