@@ -23,9 +23,12 @@ body{
 }
 .content{
     border-radius: 1rem;
-    background-color: #121212;
+    /* background-color: #1E1E1E; */
+    background: #1F1F1F;
+    background: linear-gradient(180deg, rgba(31, 31, 31, 1) 0%, rgba(28, 28, 28, 1) 50%, rgba(0, 0, 0, 1) 100%);
     flex: 1;
     overflow: auto; /* scroll bar when required*/
+    margin: 0.5rem;
 }
 .player{
     position: fixed;
@@ -114,6 +117,7 @@ a{
     font-size: 0.85rem;
     font-weight: 500;
     opacity: 0.7;
+    margin-bottom: 1rem;
 
 }
 .p1, .p2{
@@ -124,8 +128,49 @@ a{
     font-size: 0.85rem;
     border-radius: 1.75rem;
     padding: 0.5rem 1.25rem;
-    margin-top: 1rem;
     font-weight: 550;
     border: none;
     width: fit-content;
+    margin-right: 1rem;
+}
+.sticky-navbar{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-circle{
+    height: 2.25rem;
+    width: 2.25rem;
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.25rem;
+    opacity: 0.5;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+.img-circle:hover{
+    opacity: 1;
+    font-size: 1.30rem;
+}
+.badge button:hover{
+    font-size: 0.87rem;
+}
+@media (max-width:1000px) {
+    .hide{
+        display: none;
+    }
 }
