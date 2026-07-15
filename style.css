@@ -17,7 +17,7 @@ body{
     height: 100vh;
 }
 .sidebar{
-    width: 340px;
+    width: 21rem;
     border-radius: 1rem;
     background-color: #000;
 }
@@ -30,12 +30,15 @@ body{
     overflow: auto; /* scroll bar when required*/
     margin: 0.5rem;
 }
-.player{
+.music-player{
     position: fixed;
+    justify-content: space-between;
+    align-items: center;
     background-color: black;
     bottom: 0;
     height: 72px;
     width: 100%;
+    display: flex;
 }
 a{
     text-decoration: none;
@@ -175,6 +178,29 @@ a{
     .hide{
         display: none;
     }
+    .music-player .controls{
+        display: none;
+    }
+}
+@media (max-width:550px) {
+    .music-player .album{
+        display: none;
+    }
+    .music-player{
+        justify-content: center;
+    }
+    .player .slider {
+        width: 12rem;
+    }
+    .nav-right .badge{
+        display: none;
+    }
+    .nav-left i{
+        display: none;
+    }
+    .sidebar{
+        width: 70%;
+    }
 }
 .card{
     padding: 1rem;
@@ -222,4 +248,96 @@ h2{
     height: 30%;
     border-top: 2px solid white;
     opacity: 0.2;
+}
+.album{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.player{
+    width: 50%;
+}
+.controls{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.controls img{
+    height: 1.1rem;
+    margin-left: 1rem;
+    opacity: 0.7;
+}
+.controls img:hover{
+    opacity: 1;
+}
+.controls input{
+    appearance: none;
+    border-radius: 0.5rem;
+    background-color: #ddd;
+    width: 5rem;
+    height: 0.3rem;
+    margin-left: 0.5rem;
+}
+.controls input::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: green;
+}
+.player-icon{
+    height: 1rem;
+    margin: 0.3rem 1rem;
+    opacity: 0.5;
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-icon:hover{
+    opacity: 1;
+}
+.slider{
+    width: 60%;
+    appearance: none;
+    background-color: #ddd;
+    height: 0.2rem;
+    border-radius: 1rem;
+}
+.slider::-webkit-slider-thumb{
+   appearance: none;
+   background-color: green;
+   height: 1rem;
+   width: 1rem;
+   border-radius: 50%;
+}
+.music-player span{
+    font-size: 0.7rem;
+    margin: 0 0.6rem;
+}
+.album>img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.3rem;
+    margin: 0 1rem 0 3.5rem;    
+}
+.album-icon img{
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-left: 0.5rem;
+    opacity: 0.7;
+}
+.album .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info p{
+    font-size: 0.8rem;
+    margin: 0;
+    line-height: 1.15rem;
+    font-weight: 600;
 }
